@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>日历UI组件</title>
+        <link rel="stylesheet" href="src/index.css">
+    </head>
+    <body>
+        <input class="date" type="text" readonly name="" value="" data-init='' placeholder="请选择日期">
+        <script src="src/jquery-2.0.0.min.js"></script>
+        <script src="src/index.js"></script>
+        <script type="text/javascript">
+            $('.date').click(function () {
+                new datePicker($(this));
+            });
+        </script>
+    </body>
+</html>
